@@ -5,9 +5,9 @@ import java.sql.*;
 public class BasicConnection {
     public static void main(String[] args)
     {
-        String url = "jdbc:mysql://localhost:3306/#?serve rTimezone=America/Bogota";
-        String username = "#";
-        String password = "#";
+        String url = "jdbc:mysql://localhost:3306/Login?serve rTimezone=America/Bogota";
+        String username = "root";
+        String password = "";
         String sql = null;
         Connection conn = null;
         Statement stm = null;
