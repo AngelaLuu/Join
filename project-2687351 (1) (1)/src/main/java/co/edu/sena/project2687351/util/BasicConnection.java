@@ -5,7 +5,7 @@ import java.sql.*;
 public class BasicConnection {
     public static void main(String[] args)
     {
-        String url = "jdbc:mysql://localhost:3306/Login?serve rTimezone=America/Bogota";
+        String url = "jdbc:mysql://localhost:3306/Login?serverTimezone=America/Bogota";
         String username = "root";
         String password = "";
         String sql = null;
@@ -13,7 +13,7 @@ public class BasicConnection {
         Statement stm = null;
         ResultSet rs = null;
         try {
-            sql = "SELECT * FROM my_app.users";
+            sql = "SELECT * FROM Login.users";
             conn = DriverManager.getConnection(url, username, password);
             stm = conn.createStatement();
             rs = stm.executeQuery(sql);
